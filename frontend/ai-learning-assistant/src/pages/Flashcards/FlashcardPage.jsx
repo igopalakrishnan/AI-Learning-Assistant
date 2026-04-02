@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import Spinner from "../../components/common/Spinner";
 import Modal from "../../components/common/Modal";
+import EmptyState from "../../components/common/EmptyState";
 
 const FlashcardPage = () => {
   const { id: documentId } = useParams();
