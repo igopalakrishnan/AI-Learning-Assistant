@@ -40,6 +40,12 @@ app.use(express.urlencoded({ extended: true }));
 //Static folder for uploads
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
+//checking route
+//home
+app.get("/home", (req, res) => {
+  res.send("<h1>AI-Learning-Assistant Application</h1>")
+})
+
 //Routes
 app.use("/api/auth", authRoutes);
 app.use("/api/documents", documentRoutes);
